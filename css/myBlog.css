@@ -1,0 +1,14 @@
+.blog-btn-delete{
+	cursor:pointer;
+	color:red;
+}
+.blogSection{
+	min-height:650px;
+}
+
+
+@media screen and (max-width: 768px){
+.blog-time {
+    display:block !important;
+}
+}

@@ -1,0 +1,91 @@
+.pro-desc {
+    min-height: 200px;
+    resize: none;
+    overflow: auto;
+}
+
+.pro-content {
+    min-height: 500px;
+    resize: none;
+    overflow: auto;
+}
+
+.title-font {
+    font-size:18px;
+}
+
+.author-font {
+    font-size:18px;
+}
+
+.desc-font {
+    font-size:18px;
+}
+
+.content-font {
+    font-size:18px;
+}
+
+.detail-title{
+    min-height:45px;
+    line-height:45px;
+    background:rgba(7,17,27,.1);
+    margin-top:3px;
+    font-size:26px;
+    font-weight:600;
+    box-shadow:0 4px 8px rgba(7,17,27,.1);
+    margin-bottom:3px;
+}
+
+.detail-desc{
+    min-height:240px;
+    box-shadow:0 4px 8px rgba(7,17,27,.1);
+    font-size:16px;
+}
+
+.detail-content{
+    min-height:500px;
+    box-shadow:0 4px 8px rgba(7,17,27,.1);
+    font-size:18px;
+}
+
+.detail-author{
+    text-align:right;
+    font-size:18px;
+    height:20px;
+    margin-top:3px;
+    line-height:20px;
+}
+
+.detail-date{
+    text-align:right;
+    height:20px;
+    line-height:20px;
+}
+
+#content>div:nth-of-type(1){
+    overflow:auto;
+    font-size:20px;
+}
+
+#content>div:nth-of-type(2){
+    height:410px !important;
+}
+
+@media screen and (max-width:768px) {
+    .title-font {
+        text-align: left;
+    }
+
+    .author-font {
+        text-align: left;
+    }
+
+    .desc-font {
+        text-align: left;
+    }
+
+    .content-font {
+        text-align: left;
+    }
+}

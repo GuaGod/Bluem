@@ -1,0 +1,193 @@
+*{
+	margin:0;
+    padding:0;
+}
+
+ul{
+	list-style:none;
+}
+
+body{
+	background:rgba(240,240,240,1);
+	font-size:10px;
+}
+
+
+/*搜索*/
+.navigator{
+	height:50px;
+	line-height:50px;
+	display:flex;
+	align-items:center;
+
+}
+
+.search{
+	height:50px;
+	flex:1;
+	margin:0 auto;
+	display:flex;
+	align-items:center;
+	font-size:1.7rem;
+	position:relative;
+}
+
+.search label div{
+	height:30px;
+	width:180px;
+	padding-left:10px;
+	box-sizing:border-box;
+	border:2px solid rgba(7,17,27,.5);
+    display:flex;
+    align-items:center;
+    border-radius:30px;
+}
+
+.search label div input{
+	border:none;
+	outline:none;
+	width:90%; 
+	background:transparent;
+	color:black;
+}
+
+
+.search img{
+	margin-left:-36px;
+	height:30px;
+	width:30px;
+    margin-bottom:6px;
+    cursor:pointer;
+}
+
+.blogSection{
+	border:1px solid rgba(210,210,210,0.9);
+	min-height: 600px;
+	border-radius:8px;
+	background:white;
+}
+
+.oneBlog{
+	height:100px;
+	width:100%;
+	border-bottom:1px solid rgba(240,240,240,0.9);
+	margin:10px auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	box-sizing:border-box;
+	padding-left:20px;
+	overflow:hidden;
+}
+
+.oneBlog:hover{
+    background:rgb(250,250,250);
+}
+
+.blog-container{
+	margin-top:3px;
+}
+
+.blog-title{
+	width:100%;
+	height:30px;
+	font-weight:700;
+	font-size:20px;
+	line-height:30px;
+}
+
+.blog-title>a{
+	display:block;
+	height:100%;
+	width:100%;
+}
+
+.blog-title>a:hover{
+	color:rgb(216,91,43);
+}
+
+.blog-desc{
+	width:100%;
+	height:40px;
+	line-height:40px;
+    color:rgb(140,140,140);
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+
+.blog-author{
+	flex:2;
+}
+
+.blog-class{
+	flex:2;
+}
+
+.blog-time{
+	flex:1;
+}
+
+.blog-time-con{
+	color:rgb(51,181,246);
+}
+
+.blog-readNumber{
+	flex:1;
+}
+
+.blog-readNumber-con{
+	color:rgb(51,181,246);
+}
+
+.blog-delete{
+	color:red;
+}
+
+/*分页*/
+.divide-page-con{
+	height:25px;
+	margin-bottom:3px;
+}
+
+.page-ul{
+	margin:0 auto;
+	display:table;
+	overflow:hidden;
+	box-shadow:0 4px 8px rgba(7,17,27,.1)
+
+}
+.page-list{
+	height:25px;
+	float:left;
+	box-sizing:border-box;
+	padding:0 10px;
+    line-height:25px;
+    text-align:center;
+    border:1px solid rgba(7,17,27,.3);
+    transition:color,background 0.35s linear;
+    cursor:pointer;
+}
+
+.page-list-active{
+    background:yellow;
+}
+
+.page-list:hover{
+    color:white;
+    background:black;
+}
+
+.btn-hot{
+	color:red;
+}
+@media screen and (max-width:768px){
+	.blog-time{
+	   display:none;
+    }
+    .btn:nth-of-type(2){
+    	display:none;
+    }
+
+}

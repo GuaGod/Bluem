@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0">
+    <title>优秀作品</title>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../js/umeditor/themes/default/css/umeditor.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/universal.css">
+    <link type="text/css" rel="stylesheet" href="../css/producation.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-left col-xs-12 col-sm-6 col-md-8 col-lg-8">
+            <b>BlumeSun</b>
+            <span class="glyphicon glyphicon-th-list header-btn"></span>
+        </div>
+        <div class="header-right col-xs-12 col-sm-6 col-md-4 col-lg-4">
+            <ul class="header-ul">
+                <li><a href="../mainPage.html"><span class="glyphicon glyphicon-home"></span>&nbsp;主页</a></li>
+                <li>
+                    <a href="./blogs.html"><span class="glyphicon glyphicon-comment"></span>&nbsp;技术讨论区</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="container">
+        <form role="form" class="form-horizontal" id="DATA" name="DATA" method="post">
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 text-right control-label title-font">标题</label>
+                <div class="col-xs-12 col-sm-10">
+                    <input type="text" class="form-control pro-title" name="title">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 text-right
+            control-label author-font">作者</label>
+                <div class="col-xs-12 col-sm-10">
+                    <input type="text" class="form-control pro-author" name="author">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 text-right 
+            control-label desc-font">描述</label>
+                <div class="col-xs-12 col-sm-10">
+                    <textarea class="form-control pro-desc"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-xs-12 col-sm-2 text-right control-label content-font">内容</label>
+                <div class="col-xs-12 col-sm-10">
+                    <textarea class="form-control pro-content" id="content" name="content"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                
+                <div class="cox-xs-12 col-sm-10 col-sm-push-2">
+                    <button type="button" class="btn btn-info" id="submit-pro">确认提交</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="footer-left col-xs-12 col-sm-6 col-md-6 col-lg-6">“天亮了”</div>
+        <div class="footer-right col-xs-12 col-sm-6 col-md-6 col-lg-6">Made by yellowSun team.</div>
+    </footer>
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/layer-v3.1.1/layer/layer.js"></script>
+    <script src="../js/umeditor/umeditor.config.js"></script>
+    <script src="../js/umeditor/umeditor.js"></script>
+    <script src="../js/wangEditor.min.js"></script>
+    <script src="../js/universal.js"></script>
+    <script src="../js/writePro.js"></script>
+</body>
+
+</html>

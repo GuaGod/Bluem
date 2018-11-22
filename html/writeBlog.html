@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>写博客</title>
+     
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link type="text/css" href="../css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../js/umeditor/themes/default/css/umeditor.min.css">
+	<link type="text/css" href="../css/universal.css" rel="stylesheet">
+	<link type="text/css" href="../css/writeBlog.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left col-xs-12 col-sm-6 col-md-7 col-lg-7">
+               <span>BlumeSun</span>
+                <span class="glyphicon glyphicon-th-list header-btn"></span>
+            </div>
+            <div class="header-right col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                <ul class="header-ul">
+               <li><a href="../mainPage.html"><span class="glyphicon glyphicon-home"></span>&nbsp;主页</a></li>
+                <li>
+                    <a href="./blogs.html"><span class="glyphicon glyphicon-comment"></span>&nbsp;技术讨论区</a>
+                </li>
+                <li><a href="./myBlog.html"><span class="glyphicon glyphicon-calendar"></span>&nbsp;我的博客</a></li>
+                <li>
+            </ul>
+            </div>
+    </header>
+  <div class="container">
+    <section class="row">
+     <div class="con col-xs-12 col-sm-12 col-md-10 col-md-push-1">
+    	<div class="blog-title">
+         <label>
+             <div>
+                 <input type="text" placeholder="输入文章标题" id="blog-title">
+             </div>
+         </label>   
+        </div>
+        <div class="blog-content">
+            <textarea id="blog-content"></textarea>
+        </div>
+        <div class="blog-kind">
+            <span>文章类型：</span>
+            <select id="blog-class">
+                <option>前端</option>
+                <option>后端</option>
+            </select>
+        </div>
+        <div class="blog-publish">
+            <button id="publish-btn" class="btn">提交博客</button>
+        </div>
+    <div>
+    </section>
+    </div>
+    <footer>
+            <div class="footer-left col-xs-12 col-sm-6 col-md-6 col-lg-6">“天亮了”</div>
+            <div class="footer-right col-xs-12 col-sm-6 col-md-6 col-lg-6">Made by yellowSun team.</div>
+        </div>
+    </footer>
+    <script src="../js/jQuery.js"></script>
+    <script src="../js/layer-v3.1.1/layer/layer.js"></script>
+    <script src="../js/umeditor/umeditor.config.js"></script>
+    <script src="../js/umeditor/umeditor.js"></script>
+    <script src="../js/universal.js"></script>
+    <script src="../js/writeBlog.js"></script> 
+</body>
+</html>
