@@ -1,0 +1,131 @@
+.transition(@time) {
+    -webkit-transition:all @time linear;
+    -moz-transition: all @time linear;
+    -o-transition:all @time linear;
+    transition:all @time linear;
+}
+
+
+.container {
+    max-width:1200px;
+    margin:10px auto 0;
+    display:flex;
+
+    .left{
+        min-height:600px;
+        background-color: #fff;
+        padding:20px 10px 20px 10px;
+        flex:2;
+
+        .title {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        .date {
+            text-align:right;
+            margin-top:3px;
+            margin-bottom:3px;
+            color:rgba(0,0,0,.5);
+        }
+    }
+
+    .right {
+        flex:1;
+        .top{
+            .right-top();
+        }
+        .middle {
+            .right-middle();
+        }
+    }
+}
+
+.right-top() {
+    height:300px;
+        margin-bottom: 15px;
+        border-radius: 2px;
+        background-color: #fff;
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+        flex:1;
+        margin-left:10px;
+
+        .title {
+            position: relative;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 15px;
+            border-bottom: 1px dotted #E9E9E9;
+            color: #333;
+            border-radius: 2px 2px 0 0;
+            font-size: 14px;
+        }
+
+        .main {
+            #news-ul {
+                padding:0;
+
+                li{
+                max-width: 85%;
+                margin-right: 5px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-size: 14px;
+                text-indent:10px;
+                margin-top:3px;
+                margin-bottom:3px;
+
+                a {
+                   display:block;
+                   height:100%;
+                   width:100%;
+                   cursor:pointer;
+                   .transition(0.35s);
+
+                   &:hover {
+                    color: #009E94;
+                   }
+                 }
+                }
+            }
+        }
+}
+
+.right-middle() {
+   margin-top:20px;
+   margin-left:10px;
+   background:#fff;
+
+   .title {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #E9E9E9;
+    color: #333;
+    border-radius: 2px 2px 0 0;
+    font-size: 14px;
+   }
+
+   .main {
+    padding:20px;
+       a{
+         display: block;
+         position: relative;
+         height: 60px;
+         line-height: 60px;
+         text-align: center;
+         font-size: 16px;
+         font-weight: 300;
+         background-color: #009688;
+         color: #fff;
+         cursor:pointer;
+         .transition(0.5s);
+
+         &:hover {
+             opacity:0.8;
+         }
+       }
+   }
+}

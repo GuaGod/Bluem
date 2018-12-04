@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">Bluem</div>
+        <div class="right">
+
+            <ul class="option">
+                <li><a href="#">侧边栏</a></li>
+                <li><a href="#">主页</a></li>
+                <li><a href="#">刷新</a></li>
+            </ul>
+
+            <ul class="nav">
+                <li class="login"><a href="#">超级管理员</a></li>
+                <li><a href="#">技术讨论</a></li>
+                <li><a href="#"></a></li>
+                <li class="manager"><a href="#"></a></li>
+                <li class="quit"><a>退出</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+       <div class="left">
+
+           <ul id="manage-nav">
+               <li class="active" data-page="1">报名审核</li>
+               <li data-page="2">注册审核</li>
+               <li data-page="3">新闻管理</li>
+               <li data-page="4">通知管理</li>
+               <li data-page="5">优秀作品</li>
+           </ul>
+
+       </div>
+       <div class="right">
+
+          <div data-page="1" class="application page page-active">
+              <div class="top">
+                  <div id="app-people">已报名人数：</div>
+                  <div id="app-close">关闭报名</div>
+                  <div id="app-open">开启报名</div>
+              </div>
+              <div class="body">
+                      <ul class="head">
+                          <li>照片</li>
+                          <li>姓名</li>
+                          <li>专业</li>
+                          <li>面试岗位</li>
+                          <li>学子卡号</li>
+                          <li>手机号</li>
+                          <li>更多</li>
+                      </ul>
+                      <ul id="application-ul">
+                      </ul>
+              </div>
+          </div>
+
+          <div data-page="2" class="register page">
+              <div class="top">
+                  <div id="register-people">待审核人数：</div>
+              </div>
+              <div class="body">
+                    <ul class="head">
+                        <li>照片</li>
+                        <li>姓名</li>
+                        <li>专业</li>
+                        <li>面试岗位</li>
+                        <li>学子卡号</li>
+                        <li>手机号</li>
+                        <li>更多</li>
+                    </ul>
+                    <ul id="register-ul">
+                    </ul>
+             </div>
+          </div>
+
+          <div data-page="3" class="news page">
+                <div class="top">
+                   <div id="news-num">新闻条数：</div>
+                   <div id="news-add">增加新闻</div>
+                </div>
+                <div class="body">
+                        <ul class="head">
+                            <li>标题</li>
+                            <li>时间</li>
+                            <li>操作</li>
+                        </ul>
+                        <ul id="news-ul">
+        
+                        </ul>
+                 </div>
+          </div>
+          <div data-page="4" class="notices page">
+                <div class="top">
+                        <div id="notices-num">通知条数：</div>
+                        <div id="notices-add">增加通知</div>
+                     </div>
+                     <div class="body">
+                             <ul class="head">
+                                 <li>标题</li>
+                                 <li>时间</li>
+                                 <li>操作</li>
+                             </ul>
+                             <ul id="notices-ul">
+             
+                             </ul>
+                      </div>
+          </div>
+          <div data-page="5" class="production page"></div>
+       </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/manage.bundle.js"></script>
+    <script></script>
+</body>
+
+</html>
