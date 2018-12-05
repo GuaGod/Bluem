@@ -3,12 +3,13 @@ export class User {
         this.name = '';
         this.stateCode = '0';
         this.stuId = '';
-        this.init();
+        this.update();
     }
 
-    init() {
+    update() {
         this.name = sessionStorage.getItem('name') || '';
         this.stateCode = sessionStorage.getItem('stateCode') || '0';
         this.stuId = sessionStorage.getItem('stuId') || '';
     }
+
 }

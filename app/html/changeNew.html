@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>修改新闻（通知）</title>
     <link href="../util/umeditor/themes/default/css/umeditor.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -17,7 +17,32 @@
             </ul>
         </div>
     </header>
+    
+    <div class="container">
+        <ul class="top">
+            <li>修改新闻</li>
+        </ul>
+        <div class="body">
+            <div class="class">
+                <span class="left">所在专栏</span>
+                <select class="right" id="newsClass">
+                     <option>新闻</option>
+                     <option>通知</option>
+                </select>
+            </div>
+            <div class="title">
+                <span class="left">标题</span>
+                <input class="right" id="title">
+            </div>
+        </div>
+        <div class="bottom">
+            <textarea id="content"></textarea>
+        </div>
 
+        <div class="sub">
+            <a href="javascript:void(0)" id="sub-btn">发布修改</a>
+        </div>
+    </div>
 
 
 

@@ -5,7 +5,9 @@ module.exports = {
         manage: './src/js/manage.js',
         newDetail: './src/js/newDetail.js',
         application: './src/js/application.js',
-        writeNew: './src/js/writeNew.js'
+        writeNew: './src/js/writeNew.js',
+        changeNew: './src/js/changeNew.js',
+        blogs: './src/js/blogs.js'
     },
 
     output: {
