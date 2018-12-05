@@ -3,7 +3,9 @@ var path = require('path');
 module.exports = {
     entry: {
         manage: './src/js/manage.js',
-        newDetail: './src/js/newDetail.js'
+        newDetail: './src/js/newDetail.js',
+        application: './src/js/application.js',
+        writeNew: './src/js/writeNew.js'
     },
 
     output: {
@@ -35,6 +37,17 @@ module.exports = {
                     }
                 ],
                 exclude: '/node_modules/'
+            }, {
+                test: /\.css$/,
+                use:[{
+                    loader:'style-loader',
+                    options:{
+                        singleton:true
+                    }
+                }, {
+                    loader: 'css-loader',
+                }],
+                exclude: '/node_modules'
             }
    
         ]

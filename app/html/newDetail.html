@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>查看新闻</title>
 </head>
 <body>
     <header>
@@ -19,11 +19,9 @@
 
     <div class="container">
         <div class="left">
-           <div class="title">qweqweqweqweqw</div>
-           <div class="date">日期：2018-12-1</div>
-           <div class="content">1. 下载解压后，放置 localhost 下运行，首先打开 html/catalog.html，可以看到所有的页面目录
-                2. html 目录是整理好的页面模板、views 目录是 Fly社区的 Node.js 模板，主要是提供参考。res 目录是 JS 文件
-                3. 公共模板碎片放置在了 html/common/ 目录</div>
+           <div class="title" id="title"></div>
+           <div class="date" id="date"></div>
+           <div class="content" id="content"></div>
 
         </div>
         <div class="right">
@@ -31,16 +29,13 @@
              <div class="title">本周新闻</div>
               <div class="main">
                 <ul id="news-ul">
-                    <li><a>1231</a></li>
-                    <li><a>qewaprfoqweprj</a></li>
-                    <li><a>asd</a></li>
                 </ul>
             </div>
             </div>
             <div class="middle">
                 <div class="title">关注蓝旭</div>
                 <div class="main">
-                    <a>报名通道</a>
+                    <a href="./application.html">报名通道</a>
                 </div>
             </div>
         </div>
@@ -49,8 +44,9 @@
     <footer>
         <p class="desc"><span>Bluem</span>&nbsp;&nbsp;工作室&nbsp;&nbsp;2018&nbsp;</p>
         <p class="group">管理部 前端技术部 后端技术部 设计部</p>
-        <p class="suport">东北师范大学资助信息平台</p>
+        <p class="suport"><img src="../images/nenulogo.png">东北师范大学资助信息平台</p>
     </footer>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="../js/newDetail.bundle.js"></script>
 </body>
 </html>

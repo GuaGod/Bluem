@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>报名</title>
+</head>
+
+<body>
+    <header>
+        <div class="left"><a href="../index.html">Bluem</a></div>
+        <div class="right">
+            <ul class="nav-list">
+                <li><a>技术讨论区</a></li>
+                <li><a>注册</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="appInfor" enctype="multipart/form-data" method="post">
+            <div class="left">
+                <div class="top">
+                    <label>
+                        <img class="user-img" id="show-img">
+                        <input type="file" name="photo" class="data" id="user-img">
+                    </label>
+                </div>
+                <div class="middle-top">
+                    <input type="text" placeholder="姓名" name="name" class="data" id="user-name">
+                    <input type="text" placeholder="所在院系及专业" name="major" class="data" id="user-job">
+                </div>
+                <div class="middle-bottom">
+                    <img src="../images/label1.png">
+                    <div class="title">基本信息</div>
+                    <ul class="left">
+                        <li>性别：</li>
+                        <li>年级：</li>
+                        <li>面试职位：</li>
+                        <li>年龄：</li>
+                        <li>学号：</li>
+                    </ul>
+                    <div class="right">
+                        <li><input type="text" name="sex" class="data"></li>
+                        <li><input type="text" name="grade" class="data"></li>
+                        <li><input type="text" name="job_interview" class="data"></li>
+                        <li><input type="text" name="age" class="data"></li>
+                        <li><input type="text" name="stu_id" class="data"></li>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <img src="../images/label2.png">
+                    <div class="title">联系方式</div>
+                    <ul class="left">
+                        <li>手机：</li>
+                        <li>QQ：</li>
+                        <li>邮箱：</li>
+                        <li>寝室：</li>
+                    </ul>
+                    <ul class="right">
+                        <li><input type="text" name="phone" class="data"></li>
+                        <li><input type="text" name="qq" class="data"></li>
+                        <li><input type="text" name="email" class="data"></li>
+                        <li><input type="text" name="dormitory" class="data"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <div class="title">
+                        <img src="../images/intro.png">
+                        <span>个人简介</span>
+                    </div>
+                    <textarea class="user-intro data" name="self_info"></textarea>
+                </div>
+                <div class="middle">
+                    <div class="title">
+                        <img src="../images/skill.png">
+                        <span>掌握技能</span>
+                    </div>
+                    <textarea class="user-intro data" name="skill"></textarea>
+                </div>
+                <div class="bottom">
+                    <label>
+                        <div class="sub-btn" id="subData">
+                            提交
+                        </div>
+                        <input type="button">
+                    </label>
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p class="desc"><span>Bluem</span>&nbsp;&nbsp;工作室&nbsp;&nbsp;2018&nbsp;</p>
+        <p class="group">管理部 前端技术部 后端技术部 设计部</p>
+        <p class="suport"><img src="../images/nenulogo.png">东北师范大学资助信息平台</p>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/application.bundle.js"></script>
+</body>
+
+</html>

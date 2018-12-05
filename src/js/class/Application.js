@@ -1,3 +1,4 @@
+import { SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION } from "constants";
 
 export class Application {
     constructor() {
@@ -47,7 +48,10 @@ export class Application {
             },
             dataType:'json',
             success:function(data){
-
+                layer.open({
+                    content:data.message,
+                    offset: '140px;'
+                })
             },
             error:function(e){
               console.log(e);
@@ -63,7 +67,10 @@ export class Application {
             },
             dataType:'json',
             success:function(data){
-               
+                layer.open({
+                    content:data.message,
+                    offset: '140px;'
+                })
             },
             error:function(e){
                console.log(e);
@@ -71,13 +78,4 @@ export class Application {
            }) 
     }
 
-    bindEvent(openBtn, closeBtn) {
-       var that = this;
-       openBtn.click(function() {
-           that.open();
-       });
-       closeBtn.click(function() {
-           that.close();
-       })
-    }
 }

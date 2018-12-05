@@ -21,7 +21,14 @@ var application = new Application(),
     notices = new Notices(), 
     production = null;
 
-application.bindEvent($('#app-open'), $('#app-close'));
+
+$('#app-open').click(function() {
+  application.open();
+})
+
+$('#app-close').click(function() {
+  application.close();
+})
 
 var application_nav = new Pagination({name:'application',control:application}, function() {
                                       $('#app-people').html(`已报名人数：${application.numbers}`);
