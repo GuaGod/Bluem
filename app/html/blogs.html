@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>技术交流区</title>
 </head>
+
 <body>
     <header>
         <div class="left"><a href="../index.html">Bluem</a></div>
@@ -19,18 +21,45 @@
 
     <div class="container">
         <div class="left">
-           <div class="title" id="title"></div>
-           <div class="date" id="date"></div>
-           <div class="content" id="content"></div>
+            <div class="top">
+                <div class="title">置顶</div>
+                <ul id="setTop-ul">
+                </ul>
+            </div>
+
+
+
+            <div class="main">
+               <ul class="button-ul">
+                   <li id="before-btn" class="active">前端</li>
+                   <li>|</li>
+                   <li id="after-btn">后端</li>
+                   <li>|</li>
+                   <li id="hot-btn">热度</li>
+                   <div class="search">
+                   <input id="search-content" placeholder="输入关键字查找">
+                   <div id="search-btn">
+                       <img src="../images/search.png">
+                   </div>
+                   </ul>
+               </ul>
+               <ul id="main-ul"></ul>
+               <div class="page-container">
+                   <ul id="page-ul">
+                   </ul>
+               </div>
+            </div>
+
+
 
         </div>
         <div class="right">
             <div class="top">
-             <div class="title">本周新闻</div>
-              <div class="main">
-                <ul id="news-ul">
-                </ul>
-            </div>
+                <div class="title">热门博客</div>
+                <div class="main">
+                    <ul id="hot-ul">
+                    </ul>
+                </div>
             </div>
             <div class="middle">
                 <div class="title">关注蓝旭</div>
@@ -50,6 +79,8 @@
     </footer>
 
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../util/layer/layer.js"></script>
     <script src="../js/blogs.bundle.js"></script>
 </body>
+
 </html>
