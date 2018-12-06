@@ -121,28 +121,27 @@ $('#search-btn').click(function() {
     }
 })
 
-var changePageColor = function(target ,lists) {
+var changePageColor = function(pageNum ,lists) {
     var _len_ = lists.length;
     for(let i = 0; i < _len_; i++) {
-        lists.eq(i).removeClass('active');
+        var _tmp_ = lists.eq(i);
+        _tmp_.removeClass('active');
+        if(_tmp_.data('id') === pageNum) {
+            _tmp_.addClass('active');
+        }
     }
-    target.addClass('active');
 }
+
 $('#page-ul').click(function(e) {
     var $target = $(e.target);
-    var lists = $(this).children('.page-li');
     var pageNum = $target.data('id');
     
-    $target = $target.html() === '首页' ? lists.eq(0) : 
-              $target.html() === '尾页' ? lists.eq(-1) :
-              $target;
-   
     var data = $.extend({'pageNum':pageNum},blog.type);
     blog.update(data, function(html, data) {
         $('#main-ul').html(html);
         blogPage.update(pageNum);
         $('#page-ul').html(blogPage.html);
-        changePageColor($target ,lists);
+        changePageColor(pageNum ,$('#page-ul').children('.page-li'));
     })
     
 })

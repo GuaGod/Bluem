@@ -44,15 +44,17 @@ export class BlogPage {
         if(_showPage_ < 5) {
             return false;
         }
-        console.log(pageNum);
-        if(_total_ - pageNum > 2) {
-            start = pageNum;
+        
+        if(pageNum <= 2) {
+            start = 1;
+        } else if (_total_ - pageNum <= 2) {
+            start = _total_ -4;
         } else {
-            start = _total_ - 4;
+            start = pageNum - 2;
         }
 
         for(let i = 1; i <= 5 ;i++) {
-            html += `<li data-id=${start}>${start}</li>`;
+            html += `<li class="page-li" data-id=${start}>${start}</li>`;
             start++;
         }
         html += `<li data-id=${_total_}>尾页</li>`;

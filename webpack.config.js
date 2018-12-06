@@ -7,7 +7,10 @@ module.exports = {
         application: './src/js/application.js',
         writeNew: './src/js/writeNew.js',
         changeNew: './src/js/changeNew.js',
-        blogs: './src/js/blogs.js'
+        blogs: './src/js/blogs.js',
+        blogDetail: './src/js/blogDetail.js',
+        writeBlog: './src/js/writeBlog.js',
+        changeBlog: './src/js/changeBlog.js'
     },
 
     output: {
