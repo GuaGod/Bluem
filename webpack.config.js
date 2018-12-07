@@ -10,7 +10,8 @@ module.exports = {
         blogs: './src/js/blogs.js',
         blogDetail: './src/js/blogDetail.js',
         writeBlog: './src/js/writeBlog.js',
-        changeBlog: './src/js/changeBlog.js'
+        changeBlog: './src/js/changeBlog.js',
+        index: './src/js/index.js'
     },
 
     output: {

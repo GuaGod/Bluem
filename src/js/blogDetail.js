@@ -5,6 +5,7 @@ import '../less/userHeadFoot.less';
 import '../less/blogDetail.less';
 
 import {Href} from './class/Href';
+import {Comment} from './class/Comment';
 
 var href = (new Href()).data;
 

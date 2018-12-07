@@ -5,7 +5,7 @@ import '../less/userHeadFoot.less';
 import '../less/blogs.less';
 
 import { Blog } from './class/Blog.js';
-import { BlogPage} from './class/BlogPage.js';
+import { BlogPage } from './class/BlogPage.js';
 
 $.ajax({
     url: ' http://140.143.133.96:8080/servlet/SystemController?flag=findPageByClass',
