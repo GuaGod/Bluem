@@ -8,6 +8,7 @@ import {Href} from './class/Href';
 import {Comment} from './class/Comment';
 
 
+
 var href = (new Href()).data;
 
 //根据id 获取文章
@@ -63,4 +64,41 @@ $.ajax({
            });
         };
     }
+});
+
+window.editor=UM.getEditor('comment-content');
+
+
+$('#comment-submit').click(function() {
+    if(editor.getContent() === '') {
+        layer.open({
+            offset:'140px',
+            content:'评论内容不可为空！'
+        })
+        return false;
+    }
+
+    $.ajax({
+        url:'http://140.143.133.96:8080/servlet/DoFilter?flag=addComment',
+        data:{
+            id:href.id,
+            content:editor.getContent()
+        },
+        type:'POST',
+        dataType:'json',
+        success: function(data){
+            layer.open({
+                offset:'140px',
+                content:data.message
+            });
+        },
+        error: function(error) {
+            layer.open({
+                offset:'140px',
+                content:'提交失败！请稍后重新尝试'
+            });
+            console.log(error);
+        }
+    }
+    )
 })

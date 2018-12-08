@@ -1,4 +1,4 @@
-import { SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION } from "constants";
+
 
 export class Application {
     constructor() {
@@ -24,7 +24,7 @@ export class Application {
             html += `<li class="application-item">
                          <ul>
                             <li class="photo">
-                               <img src="${list[i].photo}">
+                               <img src="../../../${list[i].photo}">
                             </li>
                             <li class="name">${list[i].name}</li>
                             <li class="major">${list[i].major}</li>
@@ -35,7 +35,7 @@ export class Application {
                                 <a href="#${list[i].stu_id}">查看详情</a>
                             </li>
                            </ul>
-                     </li>`
+                     </li>` 
         }
         return html;
     }

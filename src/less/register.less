@@ -1,0 +1,84 @@
+html, body {
+    height:100%;
+    position: relative;
+}
+
+footer {
+    margin-top:0px !important;
+}
+
+.container {
+    height:calc(100% - 210px);
+    width:100%;
+    box-sizing:border-box;
+    position: relative;
+    
+    .register-box {
+        width:390px;
+        height:80%;
+        position: absolute;
+        top:0px;
+        left:0px;
+        right:0px;
+        bottom:0px;
+        margin:auto;
+        box-sizing:border-box;
+        color:white;
+        background:rgba(0,0,0,0.6);
+        border-radius:3px;
+        box-shadow:0 4px 8px rgba(230,230,230,.3);
+        
+        .title {
+            height:50px;
+            text-align:center;
+            line-height:50px;
+            font-size:20px;
+            font-weight:600;
+        }
+
+        .main {
+            width:300px;
+            margin:0 auto;
+
+            .user {
+                height:40px;
+                margin-top:30px;
+               #user {
+                   height:40px;
+                   width:100%;
+               }
+            }
+
+            .password {
+                height:40px;
+                margin-top:30px;
+
+                #password {
+                    height:40px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .bottom {
+            height:40px;
+            margin-top:30px;
+            text-align:center;
+            line-height:40px;
+
+            button {
+                padding:10px;
+                cursor:pointer;
+            }
+        }
+    }
+
+    img {
+        height:100%;
+        width:100%;
+        position:absolute;
+        top:0px;
+        left:0px;
+        z-index:-1;
+    }
+}

@@ -11,7 +11,9 @@ module.exports = {
         blogDetail: './src/js/blogDetail.js',
         writeBlog: './src/js/writeBlog.js',
         changeBlog: './src/js/changeBlog.js',
-        index: './src/js/index.js'
+        index: './src/js/index.js',
+        login: './src/js/login.js',
+        register: './src/js/register.js'
     },
 
     output: {
