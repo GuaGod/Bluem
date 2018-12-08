@@ -43,11 +43,11 @@
                         <li>学号：</li>
                     </ul>
                     <div class="right">
-                        <li><input type="text" name="sex" class="data"></li>
-                        <li><input type="text" name="grade" class="data"></li>
-                        <li><input type="text" name="job_interview" class="data"></li>
-                        <li><input type="text" name="age" class="data"></li>
-                        <li><input type="text" name="stu_id" class="data"></li>
+                        <li><input type="text" name="sex" class="data" id="user-sex"></li>
+                        <li><input type="text" name="grade" class="data" id="user-grade"></li>
+                        <li><input type="text" name="job_interview" class="data" id="user-interview"></li>
+                        <li><input type="text" name="age" class="data" id="user-age"></li>
+                        <li><input type="text" name="stu_id" class="data" id="user-stuId"></li>
                     </div>
                 </div>
                 <div class="bottom">
@@ -60,10 +60,10 @@
                         <li>寝室：</li>
                     </ul>
                     <ul class="right">
-                        <li><input type="text" name="phone" class="data"></li>
-                        <li><input type="text" name="qq" class="data"></li>
-                        <li><input type="text" name="email" class="data"></li>
-                        <li><input type="text" name="dormitory" class="data"></li>
+                        <li><input type="text" name="phone" class="data" id="user-phone"></li>
+                        <li><input type="text" name="qq" class="data" id="user-qq"></li>
+                        <li><input type="text" name="email" class="data" id="user-email"></li>
+                        <li><input type="text" name="dormitory" class="data" id="user-dormitory"></li>
                     </ul>
                 </div>
             </div>
@@ -73,24 +73,16 @@
                         <img src="../images/intro.png">
                         <span>个人简介</span>
                     </div>
-                    <textarea class="user-intro data" name="self_info"></textarea>
+                    <textarea class="user-intro data" name="self_info" id="user-intro"></textarea>
                 </div>
                 <div class="middle">
                     <div class="title">
                         <img src="../images/skill.png">
                         <span>掌握技能</span>
                     </div>
-                    <textarea class="user-intro data" name="skill"></textarea>
+                    <textarea class="user-intro data" name="skill" id="user-skill"></textarea>
                 </div>
-                <div class="bottom">
-                    <label>
-                        <div class="sub-btn" id="subData">
-                            提交
-                        </div>
-                        <input type="button">
-                    </label>
-                    </label>
-                </div>
+
             </div>
         </form>
     </div>
@@ -100,7 +92,7 @@
         <p class="suport"><img src="../images/nenulogo.png">东北师范大学资助信息平台</p>
     </footer>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/applicationDetial.bundle.js"></script>
+    <script src="../js/applicationDetail.bundle.js"></script>
 </body>
 
 </html>

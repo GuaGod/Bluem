@@ -1,5 +1,3 @@
-
-
 export class Application {
     constructor() {
         this.pages;
@@ -24,7 +22,7 @@ export class Application {
             html += `<li class="application-item">
                          <ul>
                             <li class="photo">
-                               <img src="../../../${list[i].photo}">
+                               <img src="../${list[i].photo}">
                             </li>
                             <li class="name">${list[i].name}</li>
                             <li class="major">${list[i].major}</li>
@@ -32,7 +30,7 @@ export class Application {
                             <li class="id">${list[i].stu_id}</li>
                             <li class="phone">${list[i].phone}</li>
                             <li class="more">
-                                <a href="#${list[i].stu_id}">查看详情</a>
+                                <a href="./applicationDetail.html?id=${list[i].stu_id}" target="_blank">查看详情</a>
                             </li>
                            </ul>
                      </li>` 

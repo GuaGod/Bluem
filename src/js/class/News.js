@@ -1,3 +1,4 @@
+
 export class News {
     constructor() {
         this.pages;
@@ -24,7 +25,7 @@ export class News {
                            <li>${list[i].title}</li>
                            <li>${list[i].date}</li>
                            <li>
-                              <button>查看</button>
+                              <button><a href="./newDetail.html?id=${list[i].id}" target="_blank">查看</a></button>
                               <button>修改</button>
                               <button>删除</button>
                            </li>
@@ -34,21 +35,13 @@ export class News {
         return html;
     }
     
-    add(target) {
-        target.click(function(){
-            window.open();
-        })
-    }
-    
    delete(target) {
-
+      
    }
 
    change(target) {
 
    }
 
-   look(target) {
-       
-   }
+
 }

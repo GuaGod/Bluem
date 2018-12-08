@@ -690,6 +690,124 @@ header {
 
 
  .production() {
+    .top {
+        height:30px;
+        line-height:30px;
+        border-radius:3px;
+        background:white;
+        #production-num {
+            float:left;
+        }
 
+        #production-add {
+            float:right;
+            margin-left:3px;
+            margin-right:3px;
+            background:#009688;
+            padding-left:3px;
+            padding-right:3px;
+            box-shadow:0 2px 2px 2px rgba(7,17,27,.1);
+            cursor:pointer;
+        }
+    }
+
+    .body {
+        margin-top:12px;
+        overflow:hidden;
+
+            .head {
+                display:flex;
+                height:50px;
+                flex-wrap:no-wrap;
+                background:#f2f2f2;
+                padding:0;
+    
+                li {
+                  flex:1;   
+                  height:50px;
+                  line-height:50px; 
+                  text-align:center;
+                  background:white;
+                  cursor:pointer;
+                  margin-left:2px;
+                  margin-right:2px;
+                    
+                  &:nth-of-type(1) {
+                      flex:2;
+                  }
+                }
+            }
+
+            #production-ul {
+                padding:0;
+                .production-item {
+                    ul {
+                        padding:0;
+                        display:flex;
+                        overflow:hidden;
+
+                        li {
+                          flex:1;
+                          height:50px;
+                          line-height:50px; 
+                          text-align:center;
+                          background:white;
+                          cursor:pointer;
+                          margin-left:2px;
+                          margin-right:2px;
+
+                          &:nth-of-type(1) {
+                              flex:2;
+                          }
+
+                        }
+
+                        li.option {
+                            button {
+                                padding:10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+    }
+
+    .nav {
+        height: 40px;
+        width:100%;
+        #production-nav{
+
+        height:40px;
+        display:table;
+        margin:0 auto;
+        overflow:hidden;
+        margin-top:20px;
+        border-top:1px solid #009E94;
+        border-left:1px solid #009E94;
+        padding:0;
+        
+        li {
+            float:left;
+            cursor: pointer;
+            padding: 0 20px;
+            line-height: 36px;
+            border-right: 1px solid #009E94;
+            border-bottom: 1px solid #009E94;
+            font-size: 14px;
+            .transition(0.35s);
+              
+            &.active {
+                background:#009E94;
+                color:white;
+            }
+    
+            &:hover {
+                color:#009688;
+            }
+        }
+
+    }     
+    }
  }
 

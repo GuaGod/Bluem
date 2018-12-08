@@ -5,6 +5,7 @@ module.exports = {
         manage: './src/js/manage.js',
         newDetail: './src/js/newDetail.js',
         application: './src/js/application.js',
+        applicationDetail: './src/js/applicationDetail.js',
         writeNew: './src/js/writeNew.js',
         changeNew: './src/js/changeNew.js',
         blogs: './src/js/blogs.js',
@@ -13,7 +14,10 @@ module.exports = {
         changeBlog: './src/js/changeBlog.js',
         index: './src/js/index.js',
         login: './src/js/login.js',
-        register: './src/js/register.js'
+        register: './src/js/register.js',
+        writeProduction: './src/js/writeProduction.js',
+        changeProduction: './src/js/changeProduction.js',
+        productionDetail: './src/js/production.js'
     },
 
     output: {

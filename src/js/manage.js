@@ -7,6 +7,7 @@ import {HeaderList} from './class/HeaderList.js';
 import {NavList} from './class/NavList.js';
 import {User} from './class/User.js';
 import {Application} from './class/Application';
+import {Production} from './class/Production';
 import {Register} from './class/Register';
 import {News} from './class/News';
 import {Notices} from './class/Notices';
@@ -20,7 +21,7 @@ var application = new Application(),
     register = new Register(),
     news = new News(),
     notices = new Notices(), 
-    production = null;
+    production = new Production();
 
 
 $('#app-open').click(function() {
@@ -49,6 +50,11 @@ var register_nav = new Pagination({name:'register', control:register}, function(
                                      $('#register-ul').html(register.html);
 },$('#register-nav'));
 
+
+var production_nav = new Pagination({name:'production', control:production}, function() {
+                                     $('#production-num').html(`当前作品数：${production.numbers}`);
+                                     $('#production-ul').html(production.html);
+},$('#production-nav'));
 application_nav.init({pageNum:1});
 
 news_nav.init({pageNum:1});
@@ -56,3 +62,5 @@ news_nav.init({pageNum:1});
 notices_nav.init({pageNum:1});
 
 register_nav.init({pageNum:1});
+
+production_nav.init({pageNum:1});
