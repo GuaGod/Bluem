@@ -7,6 +7,7 @@ import '../less/blogDetail.less';
 import {Href} from './class/Href';
 import {Comment} from './class/Comment';
 
+
 var href = (new Href()).data;
 
 //根据id 获取文章
@@ -43,3 +44,23 @@ $.ajax({
     }
 })
 
+
+
+$.ajax({
+    url:'http://140.143.133.96:8080/servlet/UserController?flag=getComment',
+    data: {
+        id:href.id,
+        pageNum:1
+    },
+    dataType:'json',
+    success: function(data){
+        var _list_ = data.list;
+        var _len_ = _list_.length;
+        for(let i = 0; i < _len_; i++){
+           let _comment_ = new Comment();
+           _comment_.init(_list_[i],function(html) {
+             $('#comment-ul').append(html);
+           });
+        };
+    }
+})

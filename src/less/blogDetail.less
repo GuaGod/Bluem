@@ -206,30 +206,122 @@
        }
 
        .comment-main {
-           min-height:100px;
+           min-height:300px;
            display: flex;
-
+           border-bottom: 1px dotted #DFDFDF;
            .main-left {
-               height:100px;
-               width:80px;
-               border:1px solid black;
+               min-height:300px;
+               min-width:120px;
+
+               img {
+                   display:table;
+                   width:80px;
+                   height:80px;
+                   margin:0 auto;
+               }
+               div {
+                   width:100%;
+                   text-align:center;
+                   margin-top:5px;
+               }
            }
 
            .main-right {
-               height:100px;
+               min-height:300px;
                width:100%;
-               background:pink;
+               .content {
+                   min-height:200px;
+                   background-color:rgba(230,230,230,0.6);
+                   padding:10px;
+                   
+               }
+               ul {
+                   padding:0;
+                   .comment-item {
+                      display:flex;
+                     min-height:40px;
+                     line-height: 40px;
+                     border-bottom:1px solid #DFDFDF;
+
+                      div:nth-of-type(1) {
+                         min-width:140px;
+                         .fromer {
+                            color:#333;
+                         }
+                         .tomer {
+                            color:#333;
+                         }
+                      }   
+                      div:nth-of-type(2) {
+                         width:100%;
+                         color:rgba(7,17,27,.6);
+                         position:relative;
+                         min-height:40px;
+                         .reply {
+                             color:#009688;
+                             float:right;
+                             margin-right:4px;
+                             cursor:pointer;
+                         }
+                         textarea {
+                            display:block;
+                            height:40px;
+                            resize:none;
+                            width:100%;
+                            padding-right:50px;
+                            box-sizing:border-box;
+                            display:none;
+                            &.active {
+                                display:block;
+                            }
+                        }
+
+                         .reply-btn {
+                             position:absolute;
+                             right:3px;
+                             bottom:1px;
+                             cursor:pointer;
+                             display:none;
+                             .transition(0.35s);
+
+                             &:hover {
+                                 color:#009688
+                             }
+                             &.active {
+                                 display:block;
+                             }
+                         }
+                      }
+                   }
+               }
+
+               .more {
+                   text-align:center;
+                   cursor:pointer;
+                   color:#009688;
+                   background-color:rgba(230,230,230,0.3);
+                   position: relative;
+                   height:24px;
+                   line-height:24px;
+
+                   .arrow {
+                       display:block;
+                       height:0px;
+                       width:0px;
+                       position: absolute;
+                       left:50%;
+                       margin-left:-3px;
+                       border-top:5px solid #009688;
+                       border-left:5px solid transparent;
+                       border-right:5px solid transparent;
+                       border-bottom:5px solid transparent;
+                   }
+               }
            }
        }
 
        #comment-ul {
            padding:0px;
-
-           .comment {
-               .comment-item {
-
-               }
-           }
        }
 }
 
