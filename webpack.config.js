@@ -17,7 +17,7 @@ module.exports = {
         register: './src/js/register.js',
         writeProduction: './src/js/writeProduction.js',
         changeProduction: './src/js/changeProduction.js',
-        productionDetail: './src/js/production.js'
+        productionDetail: './src/js/productionDetail.js'
     },
 
     output: {

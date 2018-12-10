@@ -55,6 +55,7 @@ var production_nav = new Pagination({name:'production', control:production}, fun
                                      $('#production-num').html(`当前作品数：${production.numbers}`);
                                      $('#production-ul').html(production.html);
 },$('#production-nav'));
+
 application_nav.init({pageNum:1});
 
 news_nav.init({pageNum:1});
